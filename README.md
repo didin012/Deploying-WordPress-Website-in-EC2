@@ -6,6 +6,44 @@
 3.	Utilize some Unix commands
 4.	Create a Wordpress site
 
+## Launch an EC2 instance
+1. Put and select the following configurations provided on the image below.
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/575b506f-7c16-447f-9551-3fc7fd1158f6)
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/b23af33c-d28c-4201-93d2-8de3f63dddd4)
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/242cdf64-58d5-4992-acd5-b646ba70c843)
+
+2. Before Launching the instance make sure to create your own keypair
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/32d70c5b-efa6-4881-86d0-1f01ce229053)
+
+3. Store this PEM file on your local directory (mine is stored in Documents since I'm using Ubuntu). You will need this to access your instance via SSH
+4. Click **Launch Instance** then wait for your instance to run
+   
+## Associating Elastic IP to your instance
+You will need to associate an Elastic IP to your instance so that whenever you restart your instance, the IP will not change and stays the same as previously.
+1. Go to EC2 Dashboard
+2. Click on Elastic IPs
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/32e43700-ece3-4502-a4dd-e3b0a43a946e)
+
+3. Click **Allocate Elastic IP Address**
+4. Click on **Allocate**
+5. On Elastic IPs lists, click on your newly created EIP
+6. Click on **Associate EIP**
+7. Choose the correct EC2 instance where the WordPress will run
+8. Click **Associate**
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/267bde3d-318f-4dcd-9335-eb3a23cb5c0f)
+
+## Accessing Ubuntu EC2 instance to our CLI
+1. Make sure your command line is in the directory on where the PEM key is stored, if not type in this:<br>
+```$ cd <directory>```<br>
+The directory can be /Documents/mykeys/
+2. If you are on the directory, type in this command<br>
+```$ ssh -i <keypair_filename> ubuntu@<assigned_elastic_IP_address>```<br>
+the <assigned_elastic_IP_address> can be found on the EC2 instance PublicIPv4 Address
+
 ## Hosting Wordpress Website in EC2
 
 1.	Install Apache webserver<br>
