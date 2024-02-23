@@ -109,5 +109,11 @@ Run the vim command to save: ```:wq```
 
 ### You have successfully deployed a WordPress website using EC2 instance
 
+## Cleaning Up
+1. Select your instance in the **Instances** section then click **Actions** and Terminate Instance
 
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/419cf1a3-702b-4317-8720-18b7c9432dbe)
 
+2. Disassociate your Elastic IP address and release it 
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/926c017e-93da-4d9e-9869-9f0181009dea)
