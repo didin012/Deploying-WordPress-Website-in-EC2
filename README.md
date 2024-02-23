@@ -1,4 +1,4 @@
-# WordPress-Website-in-EC2
+# Deploying WordPress Website in EC2
 
 ## On this project you will be able to:
 1.	Create an EC2 instance in AWS
