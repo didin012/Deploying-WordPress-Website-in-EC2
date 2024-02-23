@@ -98,7 +98,7 @@ Run the vim command to save: ```:wq```
 ```$ sudo vim 000-default.conf```
 15.	Add the ```/wordpress``` on the ```DocumentRoot```
 
-![image](https://github.com/didin012/WordPress-Website-in-EC2/assets/104528282/d079379c-b84b-46db-8a76-d44bcd49d7fd)
+![image](https://github.com/didin012/WordPress-Website-in-EC2/assets/104528282/d079379c-b84b-46db-8a76-d44bcd49d7fd)<br>
 Run the vim command to save: ```:wq```
 
 16.	Restart Apache2 <br>
