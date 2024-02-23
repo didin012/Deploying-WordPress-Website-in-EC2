@@ -87,7 +87,7 @@ the <assigned_elastic_IP_address> can be found on the EC2 instance PublicIPv4 Ad
 
 **[COPY CONTENTS]**<br>
 Run the vim command to save: ```:wq```<br>
-12.	Proceed to run installation, enter your required details on the next screen.
+12.	Proceed to run installation, enter your required details on the next screen.<br>
 13.	After filling up the details, login to Wordpress
 
 ### You have successfully logged on to your Wordpress site
