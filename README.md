@@ -1,5 +1,11 @@
 # Deploying WordPress Website in EC2
 
+## Infrastructure
+
+![image](https://github.com/didin012/Deploying-WordPress-Website-in-EC2/assets/104528282/7d5392c8-6a3d-41db-90b8-fdc17b985a53)
+
+This project includes deploying a WordPress website on an EC2 instance. It involves launching an instance, connecting to it via SSH, installing a LAMP stack (Linux, Apache, MySQL, PHP), configuring MySQL, downloading and setting up WordPress files in the Apache document root, completing the WordPress installation through a web browser. There is a slight additional configuration based on specific needs, but this process provides a solid foundation for hosting a WordPress site on AWS.
+
 ## On this project you will be able to:
 1.	Create an EC2 instance in AWS
 2.	Access the instance via SSH
