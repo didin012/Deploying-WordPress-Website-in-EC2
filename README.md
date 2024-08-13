@@ -1,4 +1,4 @@
-# Deploying WordPress Website in EC2
+# WordPress Website Deployment in EC2
 
 ## Infrastructure
 
